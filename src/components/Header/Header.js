@@ -43,22 +43,22 @@ const Header = () => {
         </li>
       </Div2>
       <Div3>
-        <li>
-          <Link href="/api/auth/login" passHref>
-            <NavLink>Login</NavLink>
-          </Link>
-        </li>
-        {user ? (
+        {!user && (
+          <li>
+            <Link href="/api/auth/login" passHref>
+              <NavLink>Login</NavLink>
+            </Link>
+          </li>
+        )}
+        {user && (
           <>
-            <li>{user.name}</li>
+            <li className="pr-4">{user.name}</li>
             <li>
               <Link href="/api/auth/logout" passHref>
                 <NavLink>Logout</NavLink>
               </Link>
             </li>
           </>
-        ) : (
-          ""
         )}
       </Div3>
     </Container>
