@@ -2,6 +2,7 @@ import Theme from "../styles/theme";
 import "../styles/globals.css";
 import Head from "next/head";
 import { AnimatePresence } from "framer-motion";
+import { UserProvider } from "@auth0/nextjs-auth0";
 
 export default function App({ Component, pageProps, router }) {
   return (
@@ -16,7 +17,9 @@ export default function App({ Component, pageProps, router }) {
           />
         </Head>
         <AnimatePresence>
-          <Component {...pageProps} key={router.route} />
+          <UserProvider>
+            <Component {...pageProps} key={router.route} />
+          </UserProvider>
         </AnimatePresence>
       </Theme>
     </>
