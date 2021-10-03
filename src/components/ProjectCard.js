@@ -3,8 +3,8 @@ import { AiFillGithub, AiFillProject } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
 
 import Image from "next/image";
-import { motion, AnimateSharedLayout, stagger } from "framer-motion";
-import image from "next/image";
+import { motion, AnimateSharedLayout } from "framer-motion";
+import { stagger, fadeInUp } from "../components/animation";
 
 const ProjectCard = ({
   project: {
@@ -50,13 +50,15 @@ const ProjectCard = ({
             <motion.div variants={stagger} initial="initial" animate="animate">
               {/* <img src={image_path} alt={name} /> */}
 
-              <Image
-                src={image_path}
-                alt={name}
-                layout="responsive"
-                height="150"
-                width="300"
-              />
+              <motion.div variants={fadeInUp}>
+                <Image
+                  src={image_path}
+                  alt={name}
+                  layout="responsive"
+                  height="150"
+                  width="300"
+                />
+              </motion.div>
               <div className="flex justify-center my-4 space-x-3">
                 <a
                   href={github_url}

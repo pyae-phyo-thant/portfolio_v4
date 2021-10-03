@@ -3,7 +3,8 @@ import ProjectCard from "../components/ProjectCard";
 import ProjectsNavbar from "../components/ProjectsNavbar";
 import { projects as projectsData } from "../data";
 import { Layout } from "../layout/Layout";
-import { motion, stagger, fadeInUp, routeAnimation } from "framer-motion";
+import { motion } from "framer-motion";
+import { stagger, fadeInUp, routeAnimation } from "../components/animation";
 
 const Projects = () => {
   const [projects, setProjects] = useState(projectsData);

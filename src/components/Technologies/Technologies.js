@@ -23,6 +23,8 @@ import {
   ListParagraph,
   ListTitle,
 } from "./TechnologiesStyles";
+import { motion, routeAnimation } from "framer-motion";
+import { stagger, fadeInUp } from "../animation";
 
 const Technologies = () => (
   <Section id="tech">
@@ -32,46 +34,53 @@ const Technologies = () => (
       I've worked with a range a technologies in the web development world. From
       Back-end To Design
     </SectionText>
-    <List>
-      <ListItem>
-        <picture>
-          <DiReact size="3rem" />
-        </picture>
-        <ListContainer>
-          <ListTitle>Front-End</ListTitle>
-          <ListParagraph>
-            Experiece with <br />
-            React.js
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <ListItem>
-        <picture>
-          <DiFirebase size="3rem" />
-        </picture>
-        <ListContainer>
-          <ListTitle>Back-End</ListTitle>
-          <ListParagraph>
-            Experience with <br />
-            Node and Databases
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <ListItem>
-        <picture>
-          <DiZend size="3rem" />
-        </picture>
-        <ListContainer>
-          <ListTitle>UI/UX</ListTitle>
-          <ListParagraph>
-            Experience with <br />
-            tools like Adobe Photoshop
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <br />
-    </List>
-    <div className="grid grid-cols-12 pb-4">
+    <motion.div variants={stagger} initial="initial" animate="animate">
+      <List>
+        <ListItem>
+          <picture>
+            <DiReact size="3rem" />
+          </picture>
+          <ListContainer>
+            <ListTitle>Front-End</ListTitle>
+            <ListParagraph>
+              Experiece with <br />
+              React.js
+            </ListParagraph>
+          </ListContainer>
+        </ListItem>
+        <ListItem>
+          <picture>
+            <DiFirebase size="3rem" />
+          </picture>
+          <ListContainer>
+            <ListTitle>Back-End</ListTitle>
+            <ListParagraph>
+              Experience with <br />
+              Node and Databases
+            </ListParagraph>
+          </ListContainer>
+        </ListItem>
+        <ListItem>
+          <picture>
+            <DiZend size="3rem" />
+          </picture>
+          <ListContainer>
+            <ListTitle>UI/UX</ListTitle>
+            <ListParagraph>
+              Experience with <br />
+              tools like Adobe Photoshop
+            </ListParagraph>
+          </ListContainer>
+        </ListItem>
+        <br />
+      </List>
+    </motion.div>
+    <motion.div
+      variants={stagger}
+      initial="initial"
+      animate="animate"
+      className="grid grid-cols-12 pb-4"
+    >
       <picture className="hover:text-blue-400">
         <DiReact size="3rem" />
       </picture>
@@ -90,7 +99,7 @@ const Technologies = () => (
       <picture className="hover:text-blue-400">
         <DiCss3 size="3rem" />
       </picture>
-    </div>
+    </motion.div>
     <SectionDivider colorAlt />
   </Section>
 );

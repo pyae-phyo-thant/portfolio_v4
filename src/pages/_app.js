@@ -1,7 +1,9 @@
 import Theme from "../styles/theme";
 import "../styles/globals.css";
+import Head from "next/head";
+import { AnimatePresence } from "framer-motion";
 
-export default function App({ Component, pageProps }) {
+export default function App({ Component, pageProps, router }) {
   return (
     <>
       <Theme>
@@ -13,7 +15,9 @@ export default function App({ Component, pageProps }) {
             key="title"
           />
         </Head>
-        <Component {...pageProps} />
+        <AnimatePresence>
+          <Component {...pageProps} key={router.route} />
+        </AnimatePresence>
       </Theme>
     </>
   );
