@@ -21,7 +21,7 @@ const Hero = () => (
         </SectionTitle>
         <motion.div variants={fadeInUp} initial="initial" animate="animate">
           <SectionText>
-            I'm FullStack Web Developer for now, I have passing for coding since
+            I'm FullStack Web Developer for now, I have passion for coding since
             I was 19 years old. I'm a self-learner and I learned web development
             by myself from w3schools and I'm willing to learn new technology.
             Now I have experience in both web and web app development.
