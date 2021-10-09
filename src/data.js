@@ -103,7 +103,8 @@ export const projects = [
   {
     id: 1,
     name: "E-commerce Store",
-    description: "This app is can buy product with stripe payment API.",
+    description:
+      "This app is can buy product with stripe payment API and Commerce.js.",
     image_path: "/images/e-commerce.webp",
     deployed_url: "https://mmmarket.netlify.app",
     github_url: "pyaephyothant.netlify.app",
@@ -112,6 +113,17 @@ export const projects = [
   },
   {
     id: 2,
+    name: "mm-commerce Store",
+    description:
+      "This app is FullStack e-commerce application with nextjs and stripe API",
+    image_path: "/images/mm-commerce.webp",
+    deployed_url: "https://mm-commerce.vercel.app",
+    github_url: "pyaephyothant.netlify.app",
+    category: ["react"],
+    key_techs: ["React", "Next.js", "Stripe"],
+  },
+  {
+    id: 3,
     name: "Pico SBS",
     description: "This is a website of Pico SBS",
     image_path: "/images/sbs.webp",
@@ -121,7 +133,7 @@ export const projects = [
     key_techs: ["HTML", "CSS", "Javascript"],
   },
   {
-    id: 3,
+    id: 4,
     name: "Covid19 Tracker",
     description: "This app is can track covid-19 case around the world",
     image_path: "/images/covid-19.webp",
@@ -131,7 +143,7 @@ export const projects = [
     key_techs: ["React", "firebase"],
   },
   {
-    id: 4,
+    id: 5,
     name: "Dev Connector",
     description:
       "This app is can be connect the developer around the world and can create developer account if you're developer",
@@ -142,7 +154,7 @@ export const projects = [
     key_techs: ["React", "Nodejs", "mern Stack"],
   },
   {
-    id: 5,
+    id: 6,
     name: "Simple React App",
     description: "This app is like new feed with live notification",
     image_path: "/images/pjm.webp",
@@ -152,7 +164,7 @@ export const projects = [
     key_techs: ["React", "Firebase"],
   },
   {
-    id: 6,
+    id: 7,
     name: "Pico EHR",
     description: "This is a website of Pico EHR ",
     image_path: "/images/hms.webp",
@@ -162,7 +174,7 @@ export const projects = [
     key_techs: ["HTML", "CSS"],
   },
   {
-    id: 7,
+    id: 8,
     name: "Sharphway Webview App",
     description: "This is a webview app make with react native",
     image_path: "/images/sharphway.webp",
@@ -172,7 +184,7 @@ export const projects = [
     key_techs: ["React Native", "Webview"],
   },
   {
-    id: 8,
+    id: 9,
     name: "Pico Innovation",
     description: "This website is Pico Innovation Company website",
     image_path: "/images/pico.webp",
