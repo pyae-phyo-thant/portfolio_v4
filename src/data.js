@@ -116,7 +116,7 @@ export const projects = [
     name: "mm-commerce Store",
     description:
       "This app is FullStack e-commerce application with nextjs and stripe API",
-    image_path: "/images/mm-commerce.webp",
+    image_path: "/images/mm-commerce.png",
     deployed_url: "https://mm-commerce.vercel.app",
     github_url: "pyaephyothant.netlify.app",
     category: ["react"],
