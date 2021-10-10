@@ -10,11 +10,15 @@ export default function App({ Component, pageProps, router }) {
       <Theme>
         <Head>
           <title>Pyae Phyo Thant | Info</title>
-          <meta
-            property="og:title"
-            content="pyae phyo thant personal information"
-            key="title"
-          />
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-209807215-1"
+          ></script>
+          <script>
+            window.dataLayer = window.dataLayer || []; function gtag()
+            {dataLayer.push(arguments)}
+            gtag('js', new Date()); gtag('config', 'UA-209807215-1');
+          </script>
         </Head>
         <AnimatePresence>
           <UserProvider>
