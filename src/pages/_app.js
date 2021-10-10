@@ -8,7 +8,7 @@ import { useRouter } from "next/router";
 
 import * as ga from "../../lib/ga";
 
-export default function App({ Component, pageProps, router }) {
+export default function App({ Component, pageProps }) {
   const router = useRouter();
 
   useEffect(() => {
@@ -25,6 +25,7 @@ export default function App({ Component, pageProps, router }) {
       router.events.off("routeChangeComplete", handleRouteChange);
     };
   }, [router.events]);
+
   return (
     <>
       <Theme>
